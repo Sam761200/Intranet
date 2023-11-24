@@ -1,0 +1,112 @@
+.home {
+    display: grid;
+      
+      justify-content: center;
+      align-items: center;
+      align-content:center;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      min-height: 100vh;
+      max-height:100000vh;
+      background: rgb(189,189,189);
+      background: linear-gradient(110deg, rgba(189,189,189,1) 0%, rgba(68,68,68,1) 100%);
+
+      .Random{
+        border: 1px solid black;
+        padding: 5px 0px;
+        height:50vh;
+        width:400px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h1{
+          font-size:2rem;
+        }
+
+        .ContenuMain{
+          padding:20px 0px;
+
+          h2{
+            margin-bottom: 20px;
+          }
+          .email{
+            margin-bottom:5px;
+          }
+        }
+      }
+      
+        .LogoForm {
+          position: relative;
+          top: 20px;
+        }
+  
+        .connection-form {
+          background: rgb(14, 14, 146);
+          border-radius: 20px;
+          padding: 25px;
+          user-select: none;
+          position: relative;
+          grid-area:a;
+  
+          ul {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 18px;
+  
+            li {
+              cursor: pointer;
+              border-radius: 20px;
+              padding: 12px 22px;
+              transition: 0.2s;
+              margin: 0 12px;
+              background-color: $white;
+              font-weight: bold;
+              color: $color-2;
+  
+              &:hover {
+                background: $color-5;
+                color: $color-3;
+              }
+            }
+          }
+          #sign-up-form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+  
+            input[type="text"] {
+              padding: 6px;
+              border: grey solid 1px;
+            }
+            input[type="password"] {
+              padding: 6px;
+              border: grey solid 1px;
+            }
+            input[type="submit"] {
+              background-color: $white;
+              font-weight: bold;
+  
+              &:hover {
+                background: $color-5;
+                color: $color-3;
+              }
+            }
+            input[type="checkbox"] {
+              margin-bottom: 10px;
+            }
+            label {
+              text-align: center;
+              font-weight: bolder;
+              color:white;
+            }
+            div {
+              background-color: red;
+              color: white;
+            }
+          }
+        }
+  }
